@@ -17,7 +17,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./api.js"></script>
     <style>
         .blur {
             filter: blur(1px);
@@ -754,187 +753,19 @@
         <!-- para pengomentar -->
         <!-- Slider main container -->
         <div class="swiper mySwiper px-5">
-            <div class="swiper-wrapper">
-                <article class="swiper-slide w-10/12 p-6 mb-3 lg:ml-12 text-base bg-white rounded-lg dark:bg-hijau100">
-                    <footer class="flex justify-between items-center mb-2">
-                        <div class="flex items-center">
-                            <p
-                                class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                                <img class="mr-2 w-6 h-6 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                    alt="Jese Leos">Jese
-                                Leos
-                            </p>
-                            <p class="text-sm text-gray-600 dark:text-white"><time pubdate datetime="2022-02-12"
-                                    title="February 12th, 2022">Feb. 12, 2022</time></p>
-                        </div>
-                    </footer>
-                    <p class="text-white dark:text-white">Much appreciated! Glad you liked it ☺️</p>
-                    <div class="flex items-center mt-4 space-x-4">
-                        <button type="button"
-                            class="flex items-center text-sm text-white hover:underline dark:text-white font-medium">
-                            <svg class="mr-1.5 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 20 18">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
-                            </svg>
-                            Reply
-                        </button>
-                    </div>
-                </article>
-                <article class="swiper-slide w-10/12 p-6 mb-3 lg:ml-12 text-base bg-white rounded-lg dark:bg-hijau100">
-                    <footer class="flex justify-between items-center mb-2">
-                        <div class="flex items-center">
-                            <p
-                                class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                                <img class="mr-2 w-6 h-6 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                    alt="Jese Leos">Jese
-                                Leos
-                            </p>
-                            <p class="text-sm text-gray-600 dark:text-white"><time pubdate datetime="2022-02-12"
-                                    title="February 12th, 2022">Feb. 12, 2022</time></p>
-                        </div>
-                    </footer>
-                    <p class="text-white dark:text-white">Much appreciated! Glad you liked it ☺️</p>
-                    <div class="flex items-center mt-4 space-x-4">
-                        <button type="button"
-                            class="flex items-center text-sm text-white hover:underline dark:text-white font-medium">
-                            <svg class="mr-1.5 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 20 18">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
-                            </svg>
-                            Reply
-                        </button>
-                    </div>
-                </article>
-                <article class="swiper-slide w-10/12 p-6 mb-3 lg:ml-12 text-base bg-white rounded-lg dark:bg-hijau100">
-                    <footer class="flex justify-between items-center mb-2">
-                        <div class="flex items-center">
-                            <p
-                                class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                                <img class="mr-2 w-6 h-6 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                    alt="Jese Leos">Jese
-                                Leos
-                            </p>
-                            <p class="text-sm text-gray-600 dark:text-white"><time pubdate datetime="2022-02-12"
-                                    title="February 12th, 2022">Feb. 12, 2022</time></p>
-                        </div>
-                    </footer>
-                    <p class="text-white dark:text-white">Much appreciated! Glad you liked it ☺️</p>
-                    <div class="flex items-center mt-4 space-x-4">
-                        <button type="button"
-                            class="flex items-center text-sm text-white hover:underline dark:text-white font-medium">
-                            <svg class="mr-1.5 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 20 18">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
-                            </svg>
-                            Reply
-                        </button>
-                    </div>
-                </article>
-                <article class="swiper-slide w-10/12 p-6 mb-3 lg:ml-12 text-base bg-white rounded-lg dark:bg-hijau100">
-                    <footer class="flex justify-between items-center mb-2">
-                        <div class="flex items-center">
-                            <p
-                                class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                                <img class="mr-2 w-6 h-6 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                    alt="Jese Leos">Jese
-                                Leos
-                            </p>
-                            <p class="text-sm text-gray-600 dark:text-white"><time pubdate datetime="2022-02-12"
-                                    title="February 12th, 2022">Feb. 12, 2022</time></p>
-                        </div>
-                    </footer>
-                    <p class="text-white dark:text-white">Much appreciated! Glad you liked it ☺️</p>
-                    <div class="flex items-center mt-4 space-x-4">
-                        <button type="button"
-                            class="flex items-center text-sm text-white hover:underline dark:text-white font-medium">
-                            <svg class="mr-1.5 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 20 18">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
-                            </svg>
-                            Reply
-                        </button>
-                    </div>
-                </article>
-                <article class="swiper-slide w-10/12 p-6 mb-3 lg:ml-12 text-base bg-white rounded-lg dark:bg-hijau100">
-                    <footer class="flex justify-between items-center mb-2">
-                        <div class="flex items-center">
-                            <p
-                                class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                                <img class="mr-2 w-6 h-6 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                    alt="Jese Leos">Jese
-                                Leos
-                            </p>
-                            <p class="text-sm text-gray-600 dark:text-white"><time pubdate datetime="2022-02-12"
-                                    title="February 12th, 2022">Feb. 12, 2022</time></p>
-                        </div>
-                    </footer>
-                    <p class="text-white dark:text-white">Much appreciated! Glad you liked it ☺️</p>
-                    <div class="flex items-center mt-4 space-x-4">
-                        <button type="button"
-                            class="flex items-center text-sm text-white hover:underline dark:text-white font-medium">
-                            <svg class="mr-1.5 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 20 18">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
-                            </svg>
-                            Reply
-                        </button>
-                    </div>
-                </article>
-                <article class="swiper-slide w-10/12 p-6 mb-3 lg:ml-12 text-base bg-white rounded-lg dark:bg-hijau100">
-                    <footer class="flex justify-between items-center mb-2">
-                        <div class="flex items-center">
-                            <p
-                                class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
-                                <img class="mr-2 w-6 h-6 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                                    alt="Jese Leos">Jese
-                                Leos
-                            </p>
-                            <p class="text-sm text-gray-600 dark:text-white"><time pubdate datetime="2022-02-12"
-                                    title="February 12th, 2022">Feb. 12, 2022</time></p>
-                        </div>
-                    </footer>
-                    <p class="text-white dark:text-white">Much appreciated! Glad you liked it ☺️</p>
-                    <div class="flex items-center mt-4 space-x-4">
-                        <button type="button"
-                            class="flex items-center text-sm text-white hover:underline dark:text-white font-medium">
-                            <svg class="mr-1.5 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 20 18">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
-                            </svg>
-                            Reply
-                        </button>
-                    </div>
-                </article>
+            <div class="swiper-wrapper" id="swiper-wrapper">
             </div>
         </div>
 
         <!-- BUTTON -->
         <div class="flex justify-end gap-4 px-5">
             <div class="">
-                <button class="bg-hijau100 py-2 px-6 rounded-lg text-white font-medium ">
+                <button type="button" class="bg-hijau100 py-2 px-6 rounded-lg text-white font-medium">
                     BACK
                 </button>
             </div>
             <div class="">
-                <button class="bg-hijau100 py-2 px-6 rounded-lg text-white  font-medium">
+                <button type="button" class="bg-hijau100 py-2 px-6 rounded-lg text-white  font-medium">
                     NEXT
                 </button>
             </div>
@@ -1051,7 +882,7 @@
         </button>
     </div>
 
-
+    <script src="./api.js"></script>
     <script>
         AOS.init();
 
