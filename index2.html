@@ -295,6 +295,22 @@
             font-family: 'Roboto', 'sans-serif';
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kuning100: '#C58940',
+                        kuning50: '#FFF7D4',
+                        hijau50: '#F5FFD4',
+                        hijau100: '#586D23',
+                        hijau25: '#EBFFA8'
+
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -667,7 +683,7 @@
                 </div>
                 <div data-aos="zoom-out-down" data-aos-offset="300" data-aos-duration="1000"
                     class="bg-hijau100 mx-14  rounded-md w-72 ">
-                    <form action="aksitambahkomen.php" method="post" class="  w-full max-w-lg px-10 py-4 ">
+                    <form id="komentar-form" method="post" class="w-full max-w-lg px-10 py-4">
                         <div class="flex flex-wrap -mx-3 ">
                             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                                 <label class="block uppercase tracking-wide text-white text-xs font-normal mb-2"
@@ -675,7 +691,7 @@
                                     Nama Lengkap
                                 </label>
                                 <input name="nama" id="nama"
-                                    class=" w-full  text-white bg-gray-200 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                                    class=" w-full text-gray-900 bg-gray-200 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                     id="grid-first-name" type="text" placeholder="Nama Lengkap">
                                 <p class="text-red-500 text-xs italic ">Silakan isi kolom ini!!!.</p>
                             </div>
@@ -717,7 +733,7 @@
                                             placeholder="Write a comment..." required>
                 </textarea>
                                     </div>
-                                    <button type="submit"
+                                    <button type="button" onclick="onInsertData()"
                                         class="bg-hijau50 inline-flex items-center py-2.5 px-4 text-xs font-medium text-center  bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 hover:bg-primary-800">
                                         Post comment
                                     </button>

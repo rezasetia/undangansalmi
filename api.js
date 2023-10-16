@@ -34,3 +34,21 @@ const insertPost = async ({ nama, komentar }) => {
     console.log(e);
   }
 };
+
+const onInsertData = () => {
+  try {
+    // GET DATA FROM FORM
+    const setData = {
+      nama: document.forms["komentar-form"]["nama"].value,
+      komentar: document.forms["komentar-form"]["komentar"].value,
+    };
+
+    // RESET FORM
+    document.forms["komentar-form"]["nama"].value = "";
+    document.forms["komentar-form"]["komentar"].value = "";
+
+    insertPost(setData);
+  } catch (e) {
+    console.log(e);
+  }
+};
