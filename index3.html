@@ -305,60 +305,7 @@
     </style>
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init();
-        });
-
-
-        // Set your target date (replace this with your desired target date)
-        const targetDate = new Date('2023-12-17T23:59:59');
-
-        function updateCountdown() {
-            const currentDate = new Date();
-            const timeDifference = targetDate - currentDate;
-
-            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
-        }
-
-       
-        setInterval(updateCountdown);
-
-
-        updateCountdown();
-
-
-        // untuk manggil salju
-        
-        requestAnimationFrame(update);
-        var el = document.getElementById("audioNotifikasi");
-
-        function toggleAudio() {
-            if (el.paused) {
-                playAudio();
-            } else {
-                pauseAudio();
-            }
-        }
-
-        function playAudio() {
-            console.log('Memainkan audio...');
-            el.play();
-        }
-
-        function pauseAudio() {
-            console.log('Menghentikan audio...');
-            el.pause();
-        }
-    </script>
+   
 
 </body>
 

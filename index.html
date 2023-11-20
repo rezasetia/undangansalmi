@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sofia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   
     <style>
         .snowflakes-container {
             position: fixed;
@@ -324,9 +325,9 @@
 
                     <div class="relative mt-96  translate-y-20">
                         <div class=" mt-2 rounded-xl -left-16  w-64 h-40 absolute " style="background-color:  #F5FFD4;">
-                            <div class="   text-center p-4 text-sm font-semibold animate-slide-up ">Yth
+                            <div  class="text-center p-4 text-sm font-semibold animate-slide-up ">Yth
                                 Bapak/Ibu/Saudara/i</div>
-                            <div class=" text-center text-lg   animate-slide-up ">Nama Tamu</div>
+                            <div id="tamu" class=" text-center text-lg   animate-slide-up "></div>
                             <div class=" flex justify-center items-center">
                                 <a href="index2.html" onclick="showFireworks(event)">
                                     <button class="text-xs mt-5 text-white bounce-effect w-24 h-6"
@@ -342,7 +343,16 @@
 
                 </div>
 
-
+                <script>
+                    // METHOD FROM JAVASCRIPT TO GET URL
+                    const queryString = window.location.search;
+                    const urlParams = new URLSearchParams(queryString);
+                    // GET PARAMS 'undangan'
+                    const undanganParams = urlParams.get('undangan')
+            
+                    // GET DOM WITH ID #TAMU
+                    document.querySelector("#tamu").innerHTML = undanganParams
+                </script>
 
 
             </div>

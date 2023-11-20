@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Params</title>
+</head>
+
+<body>
+    <h1>Hello Selamat Datang!</h1>
+    <!-- SPAN IS TARGET TAMU -->
+    <h2>Kepada: <span id="tamu"></span></h2>
+
+    <!-- JS -->
+    <script>
+        // METHOD FROM JAVASCRIPT TO GET URL
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        // GET PARAMS 'undangan'
+        const undanganParams = urlParams.get('undangan')
+
+        // GET DOM WITH ID #TAMU
+        document.querySelector("#tamu").innerHTML = undanganParams
+    </script>
+</body>
+
+</html>
